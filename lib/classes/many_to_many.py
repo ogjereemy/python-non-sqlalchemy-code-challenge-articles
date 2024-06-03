@@ -105,6 +105,7 @@ class Magazine:
             raise ValueError("Categories must be of type str and longer than 0 characters")
         self._category = new_category
 
+
     def add_article(self, author, title):
         new_article = Article(author, self, title)
         self._articles.append(new_article)
